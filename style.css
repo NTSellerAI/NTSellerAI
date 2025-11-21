@@ -1,0 +1,129 @@
+/* ---------------------------------------------
+   GLOBAL SMOOTHING & BASIC RESETS
+---------------------------------------------- */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ---------------------------------------------
+   CUSTOM SCROLLBAR (modern, minimal)
+---------------------------------------------- */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #b9c2d0;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9aa5b8;
+}
+
+/* ---------------------------------------------
+   BUTTON TRANSITIONS (for Tailwind buttons)
+---------------------------------------------- */
+
+button,
+a {
+  transition: all 0.22s ease;
+}
+
+/* Hover smooth on cards */
+.shadow-sm:hover,
+.shadow:hover,
+.shadow-lg:hover {
+  transform: translateY(-2px);
+}
+
+/* ---------------------------------------------
+   HOVER ELEVATION FOR CARDS
+---------------------------------------------- */
+
+.card-hover {
+  transition: all 0.25s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 45px rgba(0,0,0,0.08);
+}
+
+/* ---------------------------------------------
+   MOBILE MENU (if added later)
+---------------------------------------------- */
+
+.mobile-menu {
+  transition: all .3s ease;
+}
+
+/* Hidden by default */
+.mobile-menu.closed {
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+}
+
+/* Visible */
+.mobile-menu.open {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* ---------------------------------------------
+   FORMS (inputs smoothing)
+---------------------------------------------- */
+
+input,
+textarea {
+  transition: border-color .2s ease, box-shadow .2s ease;
+}
+
+input:focus,
+textarea:focus {
+  outline: none !important;
+}
+
+/* ---------------------------------------------
+   SMOOTH SHADOW FOR MAIN ELEMENTS
+---------------------------------------------- */
+
+.soft-shadow {
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.07);
+}
+
+/* ---------------------------------------------
+   LOGO A LITTLE SMOOTHER
+---------------------------------------------- */
+
+img {
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
+/* ---------------------------------------------
+   SPECIAL EFFECT: subtle fade-in for all pages
+---------------------------------------------- */
+
+.page {
+  animation: pageFadeIn .6s ease forwards;
+  opacity: 0;
+}
+
+@keyframes pageFadeIn {
+  to { opacity: 1; }
+}
