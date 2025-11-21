@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NT Seller AI – L'AI che vende al posto tuo</title>
+
+  <!-- TAILWIND CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- EXTRA STYLES -->
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+  <!-- NAVBAR -->
+  <header class="w-full bg-white border-b border-gray-200 sticky top-0 z-50">
+    <nav class="max-w-7xl mx-auto px-5 py-3 flex justify-between items-center">
+      
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center space-x-2">
+        <img src="logo.png" alt="NT Seller AI" class="h-9">
+        <span class="font-bold text-lg">NT Seller AI</span>
+      </a>
+
+      <!-- Links Desktop -->
+      <div class="hidden md:flex space-x-7 text-sm font-medium">
+        <a href="index.html" class="text-blue-600">Home</a>
+        <a href="how-it-works.html" class="hover:text-blue-600">Come funziona</a>
+        <a href="pricing.html" class="hover:text-blue-600">Prezzi</a>
+        <a href="faq.html" class="hover:text-blue-600">FAQ</a>
+        <a href="contact.html" class="hover:text-blue-600">Contatti</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="max-w-7xl mx-auto px-5 py-20 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+
+    <!-- Left -->
+    <div class="animate-fadeIn">
+      <span class="inline-block bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-semibold mb-4">
+        🚀 NT Seller AI – Powered by Nivor Tech
+      </span>
+
+      <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-4">
+        L’AI che crea, ottimizza e vende i tuoi annunci al posto tuo.
+      </h1>
+
+      <p class="text-gray-600 text-lg mb-6">
+        Carica le foto. Scegli la strategia.  
+        NT Seller AI genera titolo, descrizione e prezzo perfetto per Vinted, Subito e altri marketplace.
+      </p>
+
+      <!-- CTA -->
+      <div class="flex space-x-4">
+        <a href="pricing.html"
+          class="px-6 py-3 bg-blue-600 text-white font-semibold rounded-full shadow hover:bg-blue-700 transition">
+          Guarda i piani
+        </a>
+
+        <a href="how-it-works.html"
+          class="px-6 py-3 border border-blue-600 text-blue-600 font-semibold rounded-full hover:bg-blue-50 transition">
+          Come funziona
+        </a>
+      </div>
+
+      <!-- Small badges -->
+      <div class="flex flex-wrap gap-5 text-gray-500 text-sm mt-6">
+        <span>✔ Pensato per resellers</span>
+        <span>✔ Basato su domanda reale</span>
+      </div>
+    </div>
+
+    <!-- Right card -->
+    <div class="bg-white shadow-2xl rounded-2xl p-7 border animate-slideUp">
+      <h3 class="text-xl font-semibold mb-4">Una panoramica reale</h3>
+
+      <div class="space-y-4">
+        <div class="flex justify-between text-sm">
+          <span>Analisi foto</span>
+          <span class="font-semibold">✔ Automatica</span>
+        </div>
+
+        <div class="flex justify-between text-sm">
+          <span>Prezzo intelligente</span>
+          <span class="font-semibold">🎯 Veloce / Profitto</span>
+        </div>
+
+        <div class="flex justify-between text-sm">
+          <span>Piattaforme</span>
+          <span class="font-semibold">Vinted · Subito · Wallapop*</span>
+        </div>
+      </div>
+
+      <p class="text-xs text-gray-400 mt-5">
+        *Altre in arrivo nella versione Elite.
+      </p>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-5">
+      
+      <h2 class="text-3xl font-bold text-center mb-3">Perché usare NT Seller AI?</h2>
+      <p class="text-center text-gray-500 max-w-xl mx-auto mb-10">
+        Ti fa risparmiare ore ogni mese e aumenta il tuo margine di vendita.
+      </p>
+
+      <div class="grid md:grid-cols-3 gap-6">
+
+        <div class="p-6 rounded-xl shadow bg-gray-50 border">
+          <h3 class="text-lg font-semibold mb-2">Risparmia tempo</h3>
+          <p class="text-gray-600 text-sm">
+            Carichi le foto, il resto lo fa l’AI.  
+            Titoli, descrizioni, categorie e prezzo.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-xl shadow bg-gray-50 border">
+          <h3 class="text-lg font-semibold mb-2">Prezzi intelligenti</h3>
+          <p class="text-gray-600 text-sm">
+            L’AI analizza il mercato dell’usato e calcola il prezzo ottimale.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-xl shadow bg-gray-50 border">
+          <h3 class="text-lg font-semibold mb-2">Perfetto per resellers</h3>
+          <p class="text-gray-600 text-sm">
+            Pensato per chi compra e rivende ogni mese.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-6 text-center text-sm text-gray-600 border-t bg-white">
+    © <span id="year"></span> NT Seller AI – Nivor Tech.
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+  <!-- Animation classes -->
+  <style>
+    .animate-fadeIn {
+      animation: fadeIn 1.2s ease forwards;
+      opacity: 0;
+    }
+    @keyframes fadeIn {
+      to { opacity: 1; transform: none; }
+    }
+
+    .animate-slideUp {
+      animation: slideUp .9s ease forwards;
+      opacity: 0;
+      transform: translateY(25px);
+    }
+    @keyframes slideUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+
+</body>
+</html>
