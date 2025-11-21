@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FAQ – NT Seller AI</title>
+
+  <!-- TAILWIND CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- EXTRA CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- NAVBAR -->
+  <header class="w-full bg-white border-b border-gray-200 sticky top-0 z-50">
+    <nav class="max-w-7xl mx-auto px-5 py-3 flex justify-between items-center">
+
+      <a href="index.html" class="flex items-center space-x-2">
+        <img src="logo.png" class="h-9" alt="NT Seller AI logo">
+        <span class="font-bold text-lg">NT Seller AI</span>
+      </a>
+
+      <div class="hidden md:flex space-x-7 text-sm font-medium">
+        <a href="index.html" class="hover:text-blue-600">Home</a>
+        <a href="how-it-works.html" class="hover:text-blue-600">Come funziona</a>
+        <a href="pricing.html" class="hover:text-blue-600">Prezzi</a>
+        <a href="faq.html" class="text-blue-600">FAQ</a>
+        <a href="contact.html" class="hover:text-blue-600">Contatti</a>
+      </div>
+
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="max-w-6xl mx-auto px-5 py-16 md:py-20 text-center">
+
+    <h1 class="text-4xl md:text-5xl font-extrabold mb-4 animate-fadeIn">
+      Domande frequenti
+    </h1>
+
+    <p class="text-gray-600 max-w-2xl mx-auto text-lg animate-fadeIn">
+      Tutto quello che ti serve sapere prima di iniziare a usare NT Seller AI.
+    </p>
+
+  </section>
+
+
+  <!-- FAQ LIST -->
+  <section class="pb-20">
+    <div class="max-w-4xl mx-auto px-5 space-y-6">
+
+      <!-- FAQ ITEM -->
+      <div class="bg-white border rounded-xl p-6 shadow-sm hover:shadow-lg transition animate-slideUp">
+        <h3 class="text-lg font-semibold mb-2">NT Seller AI pubblica direttamente su Vinted/Subito?</h3>
+        <p class="text-gray-600 text-sm">
+          Nella versione di lancio, NT Seller AI genera titoli, descrizioni,
+          tag e prezzi perfetti. La pubblicazione automatica sarà disponibile
+          inizialmente nel piano ELITE.
+        </p>
+      </div>
+
+      <div class="bg-white border rounded-xl p-6 shadow-sm hover:shadow-lg transition animate-slideUp delay-100">
+        <h3 class="text-lg font-semibold mb-2">Serve collegare i miei account?</h3>
+        <p class="text-gray-600 text-sm">
+          No. Per i piani BASE e PRO non è richiesto.  
+          Per la pubblicazione automatica (ELITE) servirà una connessione sicura.
+        </p>
+      </div>
+
+      <div class="bg-white border rounded-xl p-6 shadow-sm hover:shadow-lg transition animate-slideUp delay-200">
+        <h3 class="text-lg font-semibold mb-2">Come funziona il prezzo consigliato?</h3>
+        <p class="text-gray-600 text-sm">
+          L’AI confronta centinaia di annunci simili per categoria, marca,
+          stato, domanda del mercato e storico prezzi, generando un prezzo
+          ideale per **vendita veloce** o **massimo profitto**.
+        </p>
+      </div>
+
+      <div class="bg-white border rounded-xl p-6 shadow-sm hover:shadow-lg transition animate-slideUp delay-300">
+        <h3 class="text-lg font-semibold mb-2">Posso annullare l’abbonamento?</h3>
+        <p class="text-gray-600 text-sm">
+          Certo. Puoi annullare o cambiare piano in qualsiasi momento senza penali.
+        </p>
+      </div>
+
+      <div class="bg-white border rounded-xl p-6 shadow-sm hover:shadow-lg transition animate-slideUp delay-400">
+        <h3 class="text-lg font-semibold mb-2">Quanti annunci posso generare?</h3>
+        <p class="text-gray-600 text-sm">
+          Il piano Base include 30 annunci/mese.  
+          Il piano Pro offre analisi quasi illimitata*.  
+          Il piano Elite non ha limiti tecnici.
+        </p>
+      </div>
+
+      <div class="bg-white border rounded-xl p-6 shadow-sm hover:shadow-lg transition animate-slideUp delay-500">
+        <h3 class="text-lg font-semibold mb-2">Come funziona l’ottimizzazione 24/7?</h3>
+        <p class="text-gray-600 text-sm">
+          Solo il piano ELITE aggiorna in automatico prezzo, titolo e descrizione
+          monitorando visualizzazioni, concorrenza e domanda del mercato.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- CTA BOTTOM -->
+  <section class="py-16 bg-white border-t border-gray-200 text-center">
+    <h2 class="text-3xl font-bold mb-3">Hai altre domande?</h2>
+    <p class="text-gray-600 max-w-xl mx-auto mb-6">
+      Contattaci e ti risponderemo il prima possibile.
+    </p>
+
+    <a href="contact.html"
+      class="px-10 py-4 bg-blue-600 text-white rounded-full shadow-lg font-semibold hover:bg-blue-700 transition">
+      Contattaci
+    </a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-6 text-center text-sm text-gray-600 border-t bg-white">
+    © <span id="year"></span> NT Seller AI – Nivor Tech.
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+
+  <!-- Animazioni -->
+  <style>
+    .animate-fadeIn {
+      animation: fadeIn 1.2s ease forwards;
+      opacity: 0;
+    }
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+
+    .animate-slideUp {
+      animation: slideUp 1s ease forwards;
+      opacity: 0;
+      transform: translateY(25px);
+    }
+    .delay-100 { animation-delay: .1s; }
+    .delay-200 { animation-delay: .2s; }
+    .delay-300 { animation-delay: .3s; }
+    .delay-400 { animation-delay: .4s; }
+    .delay-500 { animation-delay: .5s; }
+
+    @keyframes slideUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+
+</body>
+</html>
